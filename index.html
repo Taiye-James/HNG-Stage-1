@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HNG 0-ProfileCard</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<article data-testid="test-profile-card" class="flex align-center background-dark">
+  <div>
+    <div class="flex align-center">
+      <div class="width-50 flex card  padding-10">
+        <div>
+          <div class="card-color">
+            <div id="profile">
+              <figure>
+                <img src="images/prrofile-picc.jpg" width="127" height="127" alt="profile-picture" data-testid="test-user-avatar" id="image-border"/> </figure>
+              </div>
+            <div>
+              <header>
+                <h2 data-testid="test-user-name" class="font-ariel ">
+                  Dauda Taiwo Oluwatosin
+                  </h2>
+                </header>
+              </div>
+            <div>
+              <nav>
+                <ul class="no-bullet-list flex flex-start width-20">
+                  <li><a href="#" target="_blank" data-testid="test-user-social-twitter" class="button">X</a></li>
+                  <li><a href="https://github.com/Taiye-James" target="_blank" data-testid="test-user-social-github" class="button">GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/taiye-james-837622114/" target="_blank" data-testid="test-user-social-linkedn" class="button">Linkedn</a></li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+          <div>
+            <p data-testid="test-user-bio" class="font-ariel text-gray word-wrap">
+              I am a creative frontend developer with a strong foundtion in web technologies with interests in 3d modelling. I love turning ideas into interactive experiences.
+              </p>
+            </div>
+          <div class="text-center">
+            <span data-testid="test-user-time" id="millisecondsDisplay"></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="flex align-center">
+      <div class="flex flex-start width-70" id="hobb-dislikes">
+        <div class="card padding-10 font-ariel">
+          <h3 class="text-center">
+            Hobbies
+          </h3>
+          <ul class="no-bullet-list text-gray text-center">
+            <li>Programming</li>
+            <li>3D Modelling</li>
+            <li>Reading</li>
+            <li>Gaming</li>
+            </ul>
+          </div>
+        <div class="card padding-10 font-ariel">
+          <h3 class="text-center">Dislikes</h3>
+          <ul class="no-bullet-list text-gray text-center">
+            <li>Mess or Clutter</li>
+            <li>Awkward Silences</li>
+            <li>Nonchalance</li>
+            <li>Heavy Traffic</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+  </div>
+
+</article>
+	<script>
+        function updateMilliseconds() {
+            const milliseconds = Date.now();
+            document.getElementById('millisecondsDisplay').textContent = milliseconds;
+        }
+
+        // Call the function immediately to display the initial value
+        updateMilliseconds();
+
+        // Update the milliseconds every 10 milliseconds for a near real-time display
+        setInterval(updateMilliseconds, 10); 
+    </script>
+</body>
+</html>

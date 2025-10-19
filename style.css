@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+*{
+	font-family: "Inter" sans-serif;
+}
+.flex {
+	display: flex;
+}
+.width-70 {
+	width: 70%;
+}
+
+.align-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.card {
+	border-radius: 15px;
+	background-color: #FCFCFC;
+	box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.03), 0 3px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+	padding: 20px;
+	margin: 2%;
+}
+
+.padding-10 {
+	padding: 2%;
+}
+
+.flex-start {
+	justify-content: space-between;
+}
+
+.border {
+	border: 1px solid black;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 40% 40%;
+	justify-content: space-between
+}
+
+
+
+.card-color {
+	
+}
+
+#image-border {
+	border-radius: 50%;
+	border: 3px solid aliceblue;
+}
+
+
+
+.font-ariel {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+
+.text-center {
+	text-align: center;
+}
+
+.background-dark {
+	background-color: 
+}
+
+.no-bullet-list {
+	list-style-type: none;
+}
+
+.width-20 {
+	width: 50%;
+}
+
+.text-gray {
+	color: gray;
+}
+
+.button {
+	border: 1px solid black;
+	border-radius: 25%;
+	padding: 5%;
+	background-color:darkgray;
+	color: black;
+	text-decoration: none;
+}
+.button:hover{
+	color: white;
+}
+
+.word-wrap {
+	word-wrap: break-word;
+}
+
+@media screen and (max-width:768px){
+	#hobb-dislikes{
+		display: flex;
+		flex-direction: column;
+	}
+}
