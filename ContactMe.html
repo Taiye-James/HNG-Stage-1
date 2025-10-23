@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HNG-Contact Me</title>
+<script defer src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="flex align-center height-100 background-dark">
+  <div class="card">
+    <div id="error-message"></div>
+    <form action="/" method="get" id="form">
+      <fieldset>
+        <div data-testid="test-contact-error-name" class="margin-2">
+          <label for="name">
+            FullName
+            <input name="name" type="text" required="required" id="name" data-testid="test-contact-name">
+            </label>
+          </div>
+        <div data-testid="test-contact-error-email" class="margin-2">
+          <label for="email">
+            Email <br>
+            <input name="email" type="email" required="required" id="email" data-testid="test-contact-email">
+            </label>
+          </div>
+        <div data-testid="test-contact-error-subject" id="error-subject" class="margin-2">
+          <label for="subject">
+            Subject
+            <input type="text" id="subject" name="subject" data-testid="test-contact-subject">
+            </label>
+          </div>
+        <div data-testid="test-contact-error-message" class="margin-2">
+          <label for="name">
+            Message
+            <input type="text" id="message" name="message" data-testid="test-contact-message">
+            </label>
+          </div>
+        <button type="submit">Submit</button>
+      </fieldset>
+		<div class="text-center">
+		<a href="index.html">Home</a> </div>
+      </form>
+  </div>
+</div>
+</body>
+</html>
